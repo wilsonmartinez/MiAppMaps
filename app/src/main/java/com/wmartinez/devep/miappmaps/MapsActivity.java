@@ -73,5 +73,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .title("Marker in " + placeText));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(lugar));
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(16));
     }
 }
